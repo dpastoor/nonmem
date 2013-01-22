@@ -1,10 +1,10 @@
 #read nonmem output
-setwd('C:/Users/Devin/SkyDrive/UMSOP/nonmem/piranaoutput/test1/')
-dat <- read.table (file='CS1_IV1ESTFPDF.fit', skip=1, header=T)
+setwd('C:/Users/Devin/SkyDrive/UMSOP/tutorials/accp1nonmem/test')
+dat <- read.table (file='CS1_CLcr_Wt.fit', skip=1, header=T)
 head(dat)
 
 #time may need to be set to 0 for IPRED and PRED vs DV
-#out <- dat[dat$TIME>0,]
+out <- dat[dat$TIME>0,]
 out <- dat
 #set code results to output to repository wd
 setwd('C:/Users/Devin/Documents/nonmem/ACCP1')
